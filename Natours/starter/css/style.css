@@ -138,8 +138,47 @@ body {
 
 .navigation {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 50px;
+    right: 50px;
     height: 50px;
     width: 50px;
+    z-index: 100;
+}
+
+.navigation-checkbox {
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+}
+
+.navigation-checkbox:checked~.navigation-toggle span::after {
+    transform: rotate(45deg);
+    top: 0px;
+    height: 98%;
+    transition: all .5s;
+}
+
+.navigation-checkbox:checked~.navigation-toggle span::before {
+    transform: rotate(-45deg);
+    top: 0px;
+    height: 98%;
+    transition: all .5s;
+}
+
+.navigation-toggle span::before,
+.navigation-toggle span::after {
+    content: "";
+    border: 1px solid #777;
+    width: .5px;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+}
+
+.navigation-toggle span::before {
+    transform: rotate(90deg);
+    top: 13%;
 }
