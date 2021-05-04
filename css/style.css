@@ -101,7 +101,7 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.7rem 1rem #777; }
 
 .btn::after {
   content: "";
@@ -161,7 +161,7 @@ body {
 .navigation__toggle .navigation__span::before,
 .navigation__toggle .navigation__span::after {
   content: "";
-  border: .1rem solid #777;
+  border: 0.1rem solid #777;
   width: .05rem;
   height: 70%;
   position: absolute;
