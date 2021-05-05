@@ -5,3 +5,13 @@
         clear: both;
     }
 }
+
+@mixin baseCol {
+    background-color: orangered;
+    color: $color-white;
+    float: left;
+    padding: 2rem;
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+    }
+}

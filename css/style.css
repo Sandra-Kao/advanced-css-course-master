@@ -69,7 +69,7 @@ body {
 
 .header {
   background-image: linear-gradient(to right, rgba(128, 214, 113, 0.8), rgba(39, 180, 133, 0.8)), url("../img/hero.jpg");
-  height: 95vh;
+  height: 5vh;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -104,6 +104,46 @@ body {
     float: left;
     padding: 2rem; }
     .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-3 {
+    width: calc((100% - 6rem * 2) / 3);
+    background-color: orangered;
+    color: #fff;
+    float: left;
+    padding: 2rem; }
+    .row .col-1-of-3:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-2-of-3 {
+    width: calc((100% - 6rem * 2) / 3 * 2 + 6rem);
+    background-color: orangered;
+    color: #fff;
+    float: left;
+    padding: 2rem; }
+    .row .col-2-of-3:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-4 {
+    width: calc((100% - 6rem * 3) / 4);
+    background-color: orangered;
+    color: #fff;
+    float: left;
+    padding: 2rem; }
+    .row .col-1-of-4:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-2-of-4 {
+    width: calc((100% - 6rem) / 2);
+    background-color: orangered;
+    color: #fff;
+    float: left;
+    padding: 2rem; }
+    .row .col-2-of-4:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-3-of-4 {
+    width: calc((100% - 6rem * 3) / 4 * 3 + 6rem * 2);
+    background-color: orangered;
+    color: #fff;
+    float: left;
+    padding: 2rem; }
+    .row .col-3-of-4:not(:last-child) {
       margin-right: 6rem; }
 
 .btn:link, .btn:visited {
