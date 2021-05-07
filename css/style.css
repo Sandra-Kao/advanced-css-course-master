@@ -1,3 +1,8 @@
+.section-about {
+  padding: 25rem 0;
+  background-color: #f7f7f7;
+  margin-top: -20vh; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -59,17 +64,38 @@ body {
     letter-spacing: 3.5rem;
     animation-name: moveInLeft;
     animation-timing-function: ease-in;
-    animation-duration: .5s; }
+    animation-duration: 0.5s; }
   .heading-primay--sub {
     display: block;
     font-weight: 700;
     font-size: 2rem;
     letter-spacing: 1.8rem;
-    animation: moveInRight .5s ease-in; }
+    animation: moveInRight 0.5s ease-in; }
+
+.heading-secondary {
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(128, 214, 113, 0.8), rgba(39, 180, 133, 0.8));
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.8rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s;
+  text-transform: uppercase; }
+  .heading-secondary:hover {
+    text-shadow: 1rem 1rem 1rem #ccccd4;
+    transform: skewY(0.5deg) skewX(8deg);
+    letter-spacing: 0.9rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
 
 .header {
   background-image: linear-gradient(to right, rgba(128, 214, 113, 0.8), rgba(39, 180, 133, 0.8)), url("../img/hero.jpg");
-  height: 5vh;
+  height: 95vh;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -87,64 +113,38 @@ body {
     position: absolute;
     text-align: center; }
 
+.grid-test {
+  padding: 4rem;
+  background: #ccc; }
+
 .row {
   max-width: 114rem;
-  background-color: #fff;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    color: #fff;
+    float: left;
+    padding: 2rem; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
   .row::after {
     content: '';
     display: table;
     clear: both; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2);
-    background-color: orangered;
-    color: #fff;
-    float: left;
-    padding: 2rem; }
-    .row .col-1-of-2:not(:last-child) {
-      margin-right: 6rem; }
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 6rem * 2) / 3);
-    background-color: orangered;
-    color: #fff;
-    float: left;
-    padding: 2rem; }
-    .row .col-1-of-3:not(:last-child) {
-      margin-right: 6rem; }
+    width: calc((100% - 6rem * 2) / 3); }
   .row .col-2-of-3 {
-    width: calc((100% - 6rem * 2) / 3 * 2 + 6rem);
-    background-color: orangered;
-    color: #fff;
-    float: left;
-    padding: 2rem; }
-    .row .col-2-of-3:not(:last-child) {
-      margin-right: 6rem; }
+    width: calc((100% - 6rem * 2) / 3 * 2 + 6rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 6rem * 3) / 4);
-    background-color: orangered;
-    color: #fff;
-    float: left;
-    padding: 2rem; }
-    .row .col-1-of-4:not(:last-child) {
-      margin-right: 6rem; }
+    width: calc((100% - 6rem * 3) / 4); }
   .row .col-2-of-4 {
-    width: calc((100% - 6rem) / 2);
-    background-color: orangered;
-    color: #fff;
-    float: left;
-    padding: 2rem; }
-    .row .col-2-of-4:not(:last-child) {
-      margin-right: 6rem; }
+    width: calc((100% - 6rem) / 2); }
   .row .col-3-of-4 {
-    width: calc((100% - 6rem * 3) / 4 * 3 + 6rem * 2);
-    background-color: orangered;
-    color: #fff;
-    float: left;
-    padding: 2rem; }
-    .row .col-3-of-4:not(:last-child) {
-      margin-right: 6rem; }
+    width: calc((100% - 6rem * 3) / 4 * 3 + 6rem * 2); }
 
 .btn:link, .btn:visited {
   display: inline-block;
